@@ -5,8 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/stylesheet.css" />
+    <link rel="stylesheet" href="./css/loading.css" />
   </head>
   <body>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
+    <div class="roundWrapper">
+      <div class="round"></div>
+    </div>
+    <!-- <div class="contentWrapper"> -->
+    <div class="content">
+      <div class="player">
+        <div class="score">
+          <div>Your Score</div>
+          <div class="stars">
+            <!-- <span>&#11088;</span>
+            <span>&#11088;</span>
+            <span>&#11088;</span>
+            <span>&#11088;</span>
+            <span>&#9734;</span> -->
+          </div>
+        </div>
+        <div class="selections">
+          <img
+            class="img-selection"
+            data-player-selection="ROCK"
+            src="./img/rock.svg"
+            alt="Rock"
+          />
+          <img
+            class="img-selection"
+            data-player-selection="PAPER"
+            src="./img/paper.svg"
+            alt="Paper"
+          />
+          <img
+            class="img-selection"
+            data-player-selection="SCISSORS"
+            src="./img/scissors.svg"
+            alt="Scissors"
+          />
+        </div>
+        <div class="status">
+          <div class="status-content" id="player-status"></div>
+        </div>
+      </div>
+      <div class="opponent">
+        <div class="score">
+          <div>Opponent's Score</div>
+          <div class="stars">
+            <!-- <span>&#11088;</span>
+            <span>&#11088;</span>
+            <span>&#11088;</span>
+            <span>&#11088;</span>
+            <span>&#9734;</span> -->
+          </div>
+        </div>
+        <div class="selections">
+          <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="check-mark">
+            <img src="./img/check-mark.gif" />
+          </div>
+          <!-- <img src="./img/check-mark.gif" /> -->
+        </div>
+        <div class="status">
+          <div class="status-content" id="opponent-status"></div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <div class="resultWrapper">
+      <div class="result-content">GAME ON!</div>
+    </div>
+    <div class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="resultText"></p>
+      </div>
+    </div>
   </body>
 </html>
