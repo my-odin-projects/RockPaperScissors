@@ -228,18 +228,18 @@ let displayResult = () => {
     if (winner && winner.wins == game.totalRounds) {
       displayModal(winner);
     } else {
-      triggerNextRound(3000);
+      triggerNextRound(1000);
     }
   }
 };
 
 let displayModal = (winner) => {
   if (winner.name == PLAYER) {
-    resultText.textContent =
-      "Congratulation !!! You beat the shit out of your opponent !!! ";
+    resultText.innerHTML =
+      "<div class='resultTextString'>Congratulations !!! You beat the shit out of your opponent !!!</div>";
   } else {
-    resultText.textContent =
-      "LOSER !!! Your Opponent is the SUPERIOR being than you are";
+    resultText.innerHTML =
+      "<div class='resultTextString'>LOSER !!! Your Opponent is the SUPERIOR being than you are</div>";
   }
   modal.style.display = "block";
 };

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/stylesheet.css" />
     <link rel="stylesheet" href="./css/loading.css" />
+    <link rel="stylesheet" href="./css/button.css" />
   </head>
   <body>
     <script src="./js/main.js" defer></script>
@@ -87,6 +88,15 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <p class="resultText"></p>
+        <div class="modalButton">
+          <button onclick="window.location.reload()" class="glow-on-hover">
+            Play Again
+          </button>
+          <!-- <a href="javascript:window.location.reload()" class="glow-on-hover"
+            ></a
+          > -->
+          <button onclick="window.close()" class="glow-on-hover">I Quit</button>
+        </div>
       </div>
     </div>
   </body>
