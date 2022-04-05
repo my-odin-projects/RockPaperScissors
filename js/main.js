@@ -283,8 +283,7 @@ let hideCheckMark = () => {
 };
 
 let closeWindow = () => {
-  window.open(location.href, "_self", "");
-  window.close();
+  location.href = "thankYou.html";
 };
 
 let game = new Game(3, "Agatha");

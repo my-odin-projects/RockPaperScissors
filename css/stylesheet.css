@@ -15,9 +15,38 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: #f9faf8;
   /* opacity: 0.5; */
   /* align-items: center;
   justify-content: center; */
+}
+
+.site-header {
+  display: flex;
+  align-self: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #f9faf8;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 28px;
+  color: #f9faf8;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: right;
+}
+
+.footer-content-text {
+  padding-right: 20px;
 }
 
 .roundWrapper,
