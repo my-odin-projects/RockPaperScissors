@@ -282,6 +282,11 @@ let hideCheckMark = () => {
   checkMark.style.display = "none";
 };
 
+let closeWindow = () => {
+  window.open(location.href, "_self", "");
+  window.close();
+};
+
 let game = new Game(3, "Agatha");
 resetStars();
 startRound();
